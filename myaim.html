@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website | My Aim</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                min-height: 100vh;
+            }
+            h1{
+                font-size: 25px;
+                text-align: center;
+            }
+            .monthDiv{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .monthDiv > button{
+                margin: 10px 20px;
+                cursor: pointer;
+
+            }
+            .monthDiv > button:hover{
+                background-image: linear-gradient(rgba(20, 20, 238, 0.856), rgb(44, 44, 233));
+            }
+            .monthDiv > button:active{
+                outline-style: solid;
+                outline-width: 5px;
+                outline-color: rgba(0, 183, 255, 0.685);
+            }
+            button{
+                background-color: rgba(11, 11, 148, 0.829);
+                border: none;
+                padding: 8px 15px;
+                border-radius: 4px;
+                color: white;
+                margin: 5px 5px;
+
+            }
+            .year{
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                color: rgba(11, 11, 148, 0.829);
+            }
+            header{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px 20px;
+                background-color: rgba(11, 11, 148, 0.829);
+                color: white;
+            }
+            h1{
+                color: rgb(248, 175, 40);
+                text-align: center;
+                font-size: 25px;
+            }
+            a{
+                color: rgba(255, 255, 255, 0.699);
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;
+            }
+
+            .in-week-target{
+                min-width: 20px;
+                margin-top: 20px;
+                box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.325);
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                background-image: linear-gradient(rgba(134, 130, 130, 0.311), rgb(255, 255, 255));
+                padding: 10px 20px;
+                
+                flex-direction: column;
+            }
+            .main-week{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .head{
+                font-weight: bold;
+            }
+
+            b{
+                color: rgb(10, 204, 10);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="myaim.html">My Aims</a>
+            <a href="mytimetable.html">My Timetable</a>
+            <a href="jtsf.html">JTSF</a>
+            <a href="notes.html">Study Notes</a>
+        </header>
+        <h1>WHAT DO YOU WANT TO ACHIEVE THIS MONTH?</h1>
+
+
+        <br>
+        <br>
+        <p class="year">2023</p>
+        <div class="monthDiv">
+            <button id="july2023" onclick="july2023()">July</button>
+            <button id="august2023">August</button>
+            <button id="September2023">September</button>
+            <button id="october2023">October</button>
+            <button id="november2023">November</button>
+            <button id="december2023" >December</button>
+            
+        </div>
+        <div class="main-week">
+            <div class="in-week-target">
+                <p class="head">IN-WEEK TARGET</p>
+                <ul>
+                    <li>Complete Section 2 of <b>Modern Biology</b> before 24<sup>th</sup> of July 2023</li>
+                    <li>Complete 50 pages of <b>Dandy English</b> before 29<sup>th</sup> of July 2023</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <script>
+            var hasdisplayed = false;
+
+            function july2023(){
+                if (!hasdisplayed){
+                    var july2023 = document.createElement(span).innerHTML = "1. Conclude Modern Biology"
+                }
+            }
+        </script>
+    </body>
+</html>
